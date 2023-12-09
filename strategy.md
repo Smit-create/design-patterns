@@ -29,9 +29,9 @@ public abstract class Car {
 ```
 
 Now, how can we make this design more maintainable and also control
-the behaviour of a Car dynamically. Let's a Car can have two `fuelType` and
+the behaviour of a Car dynamically? Let's say a Car can have two `fuelType` and
 you want to change the `fuelType` of the Car if the Car has traveled 100
-kms.
+kms for some reason.
 
 The solution is to use a Strategy Pattern.
 
@@ -50,13 +50,14 @@ from what stays the same.
 
 ### Technique
 
-The point is to exploit polymorphism by programming to a supertype so that
+The point is to exploit *polymorphism* by programming to a supertype so that
 the actual runtime objects isn't locked into some code. Let's use
 the principles and re-design step by step:
 
 1. Identify the aspects if your application that vary and separate them
 from what stays the same.
-- To these we identify that `fuelType` and `numberOfSeats` are the varying.
+- To these we identify that `fuelType` and `numberOfSeats` are the varying
+components.
 
 
 2. Program to an interface:
