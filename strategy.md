@@ -95,7 +95,7 @@ public class FourSeater implements SeatNumber {
 
 public class TwoSeater implements SeatNumber {
     public int numberOfSeats() {
-        return 4;
+        return 2;
     }
 }
 ```
