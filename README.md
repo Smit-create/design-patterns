@@ -1,3 +1,3 @@
-# Design Patterns
+# Design Patterns Tutorials
 
-1. Stratery Pattern
+This is currently WIP.
