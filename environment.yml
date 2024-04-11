@@ -8,3 +8,11 @@ dependencies:
   - pip
   - pip:
     - jupyter-book
+    - docutils==0.17.1
+    - sphinx-tojupyter==0.3.0
+    - sphinxext-rediraffe==0.2.7
+    - sphinx-exercise==0.4.1
+    - sphinx-proof==0.1.3
+    - ghp-import==1.1.0
+    - sphinxcontrib-youtube==1.1.0
+    - sphinx-togglebutton==0.3.1
