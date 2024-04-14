@@ -42,11 +42,11 @@ class Employee(ABC):
     def __init__(self, name, salary):
         self.name = name
         self.salary = salary
-    
+
     @abstractmethod
     def calculate_bonus(self):
         pass
-    
+
     @abstractmethod
     def type_name(self):
         pass
@@ -59,7 +59,7 @@ class FullTimeEmployee(Employee):
     def calculate_bonus(self):
         # Full-time employees get 10% bonus
         return self.salary * 0.1
-    
+
     def type_name(self):
         return "FullTimeEmployee"
 
@@ -67,7 +67,7 @@ class PartTimeEmployee(Employee):
     def calculate_bonus(self):
         # Part-time employees get 5% bonus
         return self.salary * 0.05
-    
+
     def type_name(self):
         return "PartTimeEmployee"
 
@@ -75,7 +75,7 @@ class Contractor(Employee):
     def calculate_bonus(self):
         # Contractors don't receive bonus
         return 0
-    
+
     def type_name(self):
         return "Contractor"
 ```
@@ -136,15 +136,16 @@ In this example, based on the salary provided, the hiring manager (`HRManager` o
 
 Each employee's bonus is then calculated using the `calculate_bonus` method specific to their type.
 
-+++
 
-## Benefits
+## Benefits & Drawbacks
 
+```{admonition} Benefits
 - Promotes loose coupling between creator and product classes.
 - Allows for easy extension by adding new creator and product subclasses.
 - Encapsulates object creation logic, making it easier to manage and maintain.
+```
 
-## Drawbacks
-
+```{admonition} Drawbacks
 - May result in a proliferation of subclasses if there are many product variations.
 - Requires the creation of additional classes, which can increase complexity.
+```

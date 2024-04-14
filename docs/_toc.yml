@@ -6,3 +6,5 @@ parts:
   chapters:
   - file: lectures/singleton
   - file: lectures/factory
+  - file: lectures/builder
+  - file: lectures/prototype

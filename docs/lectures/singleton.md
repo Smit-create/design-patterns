@@ -82,15 +82,16 @@ logger1.close()
 
 In the above example, we ensure that there is only one instance of the `Logger` class throughout the application. All log messages are written to the same log file, maintaining consistency and preventing multiple log files from being created.
 
-+++
 
-## Benefits
+## Benefits & Drawbacks
 
+```{admonition} Benefits
 - Ensures that a class has only one instance.
 - Provides a global point of access to that instance.
 - Lazy initialization: The instance is created only when it is first requested.
+```
 
-## Drawbacks
-
+```{admonition} Drawbacks
 - Can introduce tight coupling between classes.
 - Global state: Changes to the singleton object affect the entire application.
+```
