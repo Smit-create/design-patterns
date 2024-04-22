@@ -12,3 +12,4 @@ parts:
   numbered: true
   chapters:
   - file: lectures/adapter
+  - file: lectures/bridge
