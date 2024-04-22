@@ -8,3 +8,7 @@ parts:
   - file: lectures/factory
   - file: lectures/builder
   - file: lectures/prototype
+- caption: Structural Design Patterns
+  numbered: true
+  chapters:
+  - file: lectures/adapter
