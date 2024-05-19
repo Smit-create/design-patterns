@@ -41,7 +41,7 @@ class Adaptee:
         return "Response from Adaptee"
 ```
 
-And, finall, we define an `Adapter` class that implements the `TargetInterface` and delegates calls to the `Adaptee` class, translating the interface.
+And, finally, we define an `Adapter` class that implements the `TargetInterface` and delegates calls to the `Adaptee` class, translating the interface.
 
 ```{code-cell} ipython3
 class Adapter(TargetInterface):
