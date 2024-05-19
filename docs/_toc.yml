@@ -13,3 +13,6 @@ parts:
   chapters:
   - file: lectures/adapter
   - file: lectures/bridge
+  - file: lectures/composite
+  - file: lectures/decorator
+  - file: lectures/proxy

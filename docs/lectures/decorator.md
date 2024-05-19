@@ -111,15 +111,16 @@ In this example:
 - We further decorate the `Espresso` object with `MochaDecorator` to add mocha.
 - We print the description and cost of each beverage to see how the decorators dynamically add behavior to the `Espresso`.
 
-+++
 
-## Benefits
+## Benefits & Drawbacks
 
+```{admonition} Benefits
 - Allows for the dynamic addition of behavior to objects without modifying their code.
 - Promotes adherence to the Open/Closed Principle.
 - Provides flexibility and composability in extending object behavior.
+```
 
-## Drawbacks
-
+```{admonition} Drawbacks
 - Can lead to a large number of small classes, increasing code complexity.
 - May introduce performance overhead due to the additional layers of abstraction.
+```
